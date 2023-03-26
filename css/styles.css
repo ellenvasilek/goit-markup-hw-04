@@ -125,6 +125,10 @@ header {
 
 .hero {
   background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -162,6 +166,7 @@ header {
   border-radius: 4px;
 }
 
+/**-------------- Mission---------- */
 .mission {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -178,6 +183,16 @@ header {
   max-width: 264px;
 }
 
+.mission-icon{
+  width: 264px;
+height: 112px;
+background: #F4F4FD;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 8px;
+}
 .mission-title {
   font-weight: 500;
   font-size: 20px;
@@ -272,10 +287,88 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  margin-bottom: 8px;
 }
+
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-soc-item {
+    width: 40px;
+  height: 40px;
+}
+.team-soc-link {
+    width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-link:hover {
+  background-color: #404BBF;
+}
+
+/**-------Clients---------- */
+
+.client {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.client-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+margin-bottom: 72px;
+}
+
+.client-list {
+   display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.client-link {
+  width: 168px;
+height: 88px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.client-logo-icon{
+  fill: #AFB1B8;
+}
+
+.client-link:hover{
+  border-color: #404BBF;
+}
+
+.client-link:hover .client-logo-icon{
+  fill: #404BBF;
+}
+
+/**-------Footer---------- */
 
 .footer {
   background-color: #2e2f42;
+    padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.footer-container{
+  display: flex;
 }
 
 .header-logo-d {
@@ -293,12 +386,6 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
-}
-
-.footer {
-  background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -325,6 +412,42 @@ header {
   letter-spacing: 0.02em;
   color: #e7e9fc;
   max-width: 264px;
+}
+
+.footer-soc{
+  margin-left: 120px;
+}
+
+.footer-soc-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
+}
+
+.footer-soc-list {
+    display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-soc-item {
+     width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+     width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-link:hover{
+  background-color: #31D0AA;
 }
 
 /** -------------------- Portfolio --------------------*/
@@ -394,6 +517,11 @@ margin-right: 24px;
   border: 1px solid #e7e9fc;
   border-top: none;
   max-width: 360px;0.
+}
+
+.port-example-item:hover{
+  border: 1px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .port-example-name {
